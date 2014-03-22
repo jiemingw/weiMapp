@@ -29,3 +29,5 @@ group :production do
   gem 'rails_12factor'
   gem 'thin'
 end
+gem 'geocoder'
+gem 'gmaps4rails'
