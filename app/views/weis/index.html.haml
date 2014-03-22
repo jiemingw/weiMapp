@@ -1,0 +1,29 @@
+%h1 Listing weis
+
+%table
+  %tr
+    %th User
+    %th Latitude
+    %th Longitude
+    %th Address
+    %th Description
+    %th Title
+    %th
+    %th
+    %th
+
+  - @weis.each do |wei|
+    %tr
+      %td= wei.User
+      %td= wei.latitude
+      %td= wei.longitude
+      %td= wei.address
+      %td= wei.description
+      %td= wei.title
+      %td= link_to 'Show', wei
+      %td= link_to 'Edit', edit_wei_path(wei)
+      %td= link_to 'Destroy', wei, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Wei', new_wei_path

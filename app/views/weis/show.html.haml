@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @wei.User
+%p
+  %b Latitude:
+  = @wei.latitude
+%p
+  %b Longitude:
+  = @wei.longitude
+%p
+  %b Address:
+  = @wei.address
+%p
+  %b Description:
+  = @wei.description
+%p
+  %b Title:
+  = @wei.title
+
+= link_to 'Edit', edit_wei_path(@wei)
+\|
+= link_to 'Back', weis_path

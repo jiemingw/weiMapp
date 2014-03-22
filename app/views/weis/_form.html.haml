@@ -1,0 +1,13 @@
+= simple_form_for(@wei) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :User
+    = f.input :latitude
+    = f.input :longitude
+    = f.input :address
+    = f.input :description
+    = f.input :title
+
+  .form-actions
+    = f.button :submit
