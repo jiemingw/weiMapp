@@ -5,6 +5,10 @@ class WeiUsersController < ApplicationController
   # GET /wei_users.json
   def index
     @wei_users = WeiUser.all
+    @hash = Gmaps4rails.build_markers(@wei_users) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+    end
   end
 
   # GET /wei_users/1
