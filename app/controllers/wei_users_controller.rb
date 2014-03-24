@@ -8,12 +8,19 @@ class WeiUsersController < ApplicationController
     @hash = Gmaps4rails.build_markers(@wei_users) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude
+      marker.infowindow user.description
+      marker.picture({
+                         "url" => "/assets/weidorm.jpg",
+                         "width" =>  32,
+                         "height" => 32})
+      marker.json({ title: user.title})
     end
   end
 
   # GET /wei_users/1
   # GET /wei_users/1.json
   def show
+    @wei_user = WeiUser.new
   end
 
   # GET /wei_users/new

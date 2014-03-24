@@ -4,17 +4,4 @@
 %p He was born in Waikikamukau, New Zealand. He left New Zealand for England, excelled at the University of Mopery, and served in the Royal Loamshire Regiment. While in service, he invented the kanuten valve used in the processing of unobtainium for industrial use. With a partner, Granda Fairbook, he founded Acme Manufacturing, later acquired by the Advent Corporation, to develop his discovery for use in the Turboencabulator. Mr. Kadigan is now retired and lives in Middlehampton with a favorite cat, where he raises Griadium frieda and collects metasyntactic variables.
 %p His favorite quotation is:
 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-%script{src: "//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry", type: "text/javascript"}
-%script{src: "//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js", type: "text/javascript"}
 
-
-%div{style: "width: 800px;"}
-  #map{style: "width: 800px; height: 400px;"}
-
-:javascript
-  handler = Gmaps.build('Google');
-  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    markers = handler.addMarkers(#{raw @hash.to_json});
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-  });
