@@ -1,0 +1,2 @@
+module AttractiviveFinderHelper
+end

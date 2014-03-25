@@ -1,4 +1,6 @@
 WeiMapp::Application.routes.draw do
+  get "activity/lookup"
+  get "attractivive_finder/get_new_attractions"
   resources :wei_users
 
   resources :weis
