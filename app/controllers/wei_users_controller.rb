@@ -48,6 +48,8 @@ class WeiUsersController < ApplicationController
     end
   end
 
+  end
+
   # PATCH/PUT /wei_users/1
   # PATCH/PUT /wei_users/1.json
   def update
