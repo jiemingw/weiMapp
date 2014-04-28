@@ -28,6 +28,11 @@ class WeiUsersController < ApplicationController
     @wei_user = WeiUser.new
   end
 
+  def delette
+    #@wei_user = WeiUser.delete_all
+    WeiUser.delete_all
+  end
+
   # GET /wei_users/1/edit
   def edit
   end
@@ -46,8 +51,6 @@ class WeiUsersController < ApplicationController
         format.json { render json: @wei_user.errors, status: :unprocessable_entity }
       end
     end
-  end
-
   end
 
   # PATCH/PUT /wei_users/1
