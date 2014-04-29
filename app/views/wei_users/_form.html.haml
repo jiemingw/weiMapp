@@ -8,5 +8,10 @@
     = f.input :description
     = f.input :title
 
+  .field
+    = f.label :avatar
+    %br/
+    = f.file_field :avatar
+
   .form-actions
     = f.button :submit

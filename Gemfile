@@ -31,3 +31,5 @@ group :production do
 end
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'paperclip'
+gem 'aws-sdk'

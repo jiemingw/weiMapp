@@ -85,6 +85,6 @@ class WeiUsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wei_user_params
-      params.require(:wei_user).permit(:latitude, :longitude, :address, :description, :title)
+      params.require(:wei_user).permit(:latitude, :longitude, :address, :description, :title, :avatar, :name)
     end
 end

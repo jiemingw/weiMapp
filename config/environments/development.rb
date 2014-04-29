@@ -42,5 +42,15 @@ WeiMapp::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   # Send email in development mode?
   config.action_mailer.perform_deliveries = true
-
+  
+  
+  #
+  config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {
+          :bucket => ENV['beijingwei'],
+          :access_key_id => ENV['AKIAI4K3R4AVH3P6GRSQ'],
+          :secret_access_key => ENV['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']
+      }
+  }
 end
