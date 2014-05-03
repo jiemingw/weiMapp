@@ -50,7 +50,7 @@ WeiMapp::Application.configure do
       :s3_credentials => {
           :bucket => ENV['beijingwei'],
           :access_key_id => ENV['AKIAI4K3R4AVH3P6GRSQ'],
-          :secret_access_key => ENV['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']
+          :secret_access_key => ENV['rvs4PNKunNtfRlvQA17LX7fpy02JWs2p39bKwd2FLOLLOL']
       }
   }
 end
