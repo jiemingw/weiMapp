@@ -83,3 +83,7 @@ pickle-email-*.html
 
 # Ignore application configuration
 /config/application.yml
+
+# secret thigs
+/config/environments/production.rb
+/config/environments/development.rb
