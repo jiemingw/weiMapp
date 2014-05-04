@@ -99,8 +99,8 @@ WeiMapp::Application.configure do
   config.paperclip_defaults = {
       :storage => :s3,
       :s3_credentials => {
-          :bucket => ENV['beijingwei'],
-          :access_key_id => ENV['AKIAI4K3R4AVH3P6GRSQ'],
+          :bucket => ENV['ggbeijingwei'],
+          :access_key_id => ENV['AKIAI4K3R4AVH3P6GRSQuu'],
           :secret_access_key => ENV['rvs4PNKunNtfRlvQA17LX7fpy02JWs2p39bKwd2FJKLOL']
       }
   }
